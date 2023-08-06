@@ -4,19 +4,16 @@ import utils.funciones as fc
 # configurar página
 fc.config_page()
 
-st.title('Predicción de ataques de apoplejía')
+st.title('Predicción Ataque Cerebrovascular')
 
 # menu
-menu = st.sidebar.selectbox('Datos COVID-19', ['Portada', 'Datos', 'Modelos', 'Predecir'])
+menu = st.sidebar.selectbox('Menú', ['Portada', 'Predicción', 'Conclusiones'])
 
 if menu == 'Portada':
     fc.portada()
 
-elif menu == 'Datos':
-    fc.datos()
-
-elif menu == 'Modelos':
-    fc.modelos()
+elif menu == 'Predicción':
+    fc.predecir()
 
 else:
-    fc.predecir()
+    fc.conclusiones()
